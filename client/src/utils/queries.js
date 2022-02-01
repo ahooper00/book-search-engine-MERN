@@ -18,3 +18,8 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+// api that allows user to search google books
+export const searchGoogleBooks = (query) => {
+  return fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+};

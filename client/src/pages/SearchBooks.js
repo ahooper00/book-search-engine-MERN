@@ -6,6 +6,7 @@ import { searchGoogleBooks } from "../utils/queries";
 import { SAVE_BOOK } from "../utils/mutations";
 // import { saveBook, searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
+import { useMutation } from '@apollo/client';
 
 const SearchBooks = () => {
   // set mutation to save book
@@ -73,7 +74,7 @@ const SearchBooks = () => {
         variables: { ...bookToSave },
       });
 
-      if (!response.ok) {
+      if (!data.ok) {
         throw new Error('something went wrong!');
       }
 
