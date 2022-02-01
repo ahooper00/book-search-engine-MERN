@@ -12,6 +12,7 @@ To set up for this project, use npm i to install dependencies. This is required 
 ```
 npm i
 ```
+Alternatively, navigate to the deployed application link on heroku to view the app in full.
 ## Usage
 Once installation of dependencies is complete, you will need to run 'npm run start' in the terminal, and the application will open using localhost:3000
 ```
